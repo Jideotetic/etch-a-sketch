@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+}
+
+main {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.container {
+  display: grid;
+  max-width: 500px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.grid {
+  border: 1px solid red;
+  cursor: pointer;
+  /* background-color: aquamarine; */
+}
+
+.grid:hover {
+  background-color: #000;
+}
+
+@media screen and (min-width: 768px) {
+  main > div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
