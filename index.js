@@ -86,14 +86,11 @@ function generateRandomColor() {
   let randomNumber = Math.floor(Math.random() * maxVal);
   randomNumber = randomNumber.toString(16);
   let randColor = randomNumber.padStart(6, 0);
-  console.log(randColor);
   return `#${randColor.toUpperCase()}`;
 }
 
 rainbow.addEventListener('click', () => {
-  console.log('rainbow');
   container.addEventListener('click', (e) => {
-    console.log(generateRandomColor());
     e.target.style.backgroundColor = generateRandomColor();
   });
 });
